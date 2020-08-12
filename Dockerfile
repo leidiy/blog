@@ -12,6 +12,8 @@ ENV GO111MODULE=on \
 # 你们得修改成自己的
 WORKDIR /home/www/goWebBlog
 
+RUN git clone https://github.com/leidiy/blog.git
+
 # 将代码复制到容器中
 COPY . .
 
